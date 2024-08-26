@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Site-Lab2</title>
+        <style>
+            canvas {
+                border: 2px solid black; 
+            background-color: red; 
+            margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Site LAB-0222</h1>
+            <p>Explorando algumas funções</p>
+            <h2>Explorando os tipos de cabeçalhos:</h2>
+            <p>Descrições dos cabeçalhos.</p>
+            <h3>Cabeçalho 03</h3>
+            <p>Descrição do 03</p>
+            <h4>Cabeçalho 04</h4>
+            <p>Descrição do 04</p>
+            <h5>Cabeçalho 05</h5>
+            <p>Descrição do 05</p>
+            <h6>Cabeçalho 06</h6>
+            <p>Descrição do 06</p>
+        </header>
+
+        <main></main>
+
+        <section id="LISTAS">
+
+            <h3>Agora vamos explorar as listas e parágrafos.</h3>
+            <h4>Vamos começar pela lista ordenada:</h4>
+            <p>Usaremos a ordem de chegada de pilotos de uma corrida como exemplo:</p>
+            <ol>
+                <li>Max Verstappen</li>
+                <li>Lewis Hamilton</li>
+                <li>Lando Noris</li>
+                <li>Checo Perres</li>
+            </ol>
+
+            <h2>Agora as listas não ordenadas:</h2>
+            <p>Usaremos uma lista de compras de exemplo:</p>
+            <ul>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Peixe</li>
+                <li>Sabonete</li>
+            </ul>
+
+        </section>
+
+        <section id="ENTRADA DE DADOS">
+            <h3>Agora vamos explorar a entrada de dados.</h3>
+            <p>Vamos utilizar de exemplo a entrada de dados de um feedback de um site de compras:</p>
+            <form action="\enviar_dados" method="post">
+                <h2>Digite seu nome e seu número de telefone, selecione seu genêro e escreva sua mensagem:</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <br><br>
+                <label for="numero">Numero:</label>
+                <input type="number" id="nome">
+                <br><br>
+                <label for="opc">Selecione:</label>
+                <select id="opc" name="opc" required>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Crítica">Crítica</option>
+                </select>
+                <br><br>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+                <br><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+                <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="ELEMENTOS_GRAFICOS">
+            <h2>Agora entraremos nos elementos gráficos:</h2>
+            <h3>Uma imagem feita utilizando o canvas:</h3>
+            <canvas id="canvas" width="150" height="300">
+              </canvas>
+              <h3>Agora alguns exemplos com o SVG:</h3>
+              <svg width="200" height="200">
+                <circle cx="100" cy="100" r="40" stroke="gray" stroke-width="4" fill="blue" />
+                <rect x="50" y="150" width="150" height="150" fill="black" />
+                <line x1="0" y1="0" x2="200" y2="200" stroke="green" stroke-width="2" />
+            </svg>
+        </section>
+
+        <section id="Fotos">
+            <h2>Agora vamos explorar os vídeos, fotos e áudios:</h2>
+            <h3>Uma foto da internet:</h3>
+            <img src="https://blog.pescagerais.com.br/wp-content/uploads/2021/06/macaco-prego-cebidae-sapajus-cay.jpg" alt="Imagem de macaco" width="300">
+            <h3>Agora um som da internet:</h3>
+            <audio controls>
+                <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_2a0e527fe2.mp3" type="audio/mp3" alt="Som de Macaco">
+            </audio>
+            <br><br>
+            <h3>Agora um vídeo de macaco:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GgE0WuBln2M?si=mP7fxx1VrIEWHkxi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+    </main>
+
+    </body>
+</html>
